@@ -16,17 +16,17 @@ func nameconv(s string) string {
 	lastUpper := true
 
 	for _, c := range s {
-		thisUpper := unicode.IsUpper(c)
+		upper := unicode.IsUpper(c)
 		switch {
-		case thisUpper && !lastUpper:
+		case upper && !lastUpper:
 			buf.WriteByte('_')
 			buf.WriteRune(c)
-		case thisUpper:
+		case upper:
 			buf.WriteRune(c)
 		default:
 			buf.WriteRune(unicode.ToUpper(c))
 		}
-		lastUpper = thisUpper
+		lastUpper = upper
 	}
 	return buf.String()
 }
