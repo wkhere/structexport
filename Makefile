@@ -1,4 +1,4 @@
 go:
-	go build
+	go test
 
 .PHONY: go
