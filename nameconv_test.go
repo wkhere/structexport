@@ -20,6 +20,7 @@ func TestNameconv(t *testing.T) {
 		{10, "QuiteLongName", "QUITE_LONG_NAME"},
 		{11, "SQLite", "SQLITE"},
 		{12, "TCPProxy", "TCPPROXY"},
+		{13, "SNAKESEverywhere", "SNAKESEVERYWHERE"},
 	}
 
 	for _, tc := range tab {
