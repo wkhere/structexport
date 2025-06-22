@@ -6,7 +6,7 @@ import (
 )
 
 // nameconv converts FieldName to FIELD_NAME.
-// In other words, pascal case to upper sname case.
+// In other words, pascal case to upper snake case.
 func nameconv(s string) string {
 	if s == "" {
 		return ""
